@@ -18,11 +18,30 @@
   };
   # Don't forget to add pwnvim again, if that ever happens....
   outputs = inputs@{ nixpkgs, home-manager, darwin, ... }: {
-    darwinConfigurations.high-sierra = darwin.lib.darwinSystem {
+    darwinConfigurations.mojave = darwin.lib.darwinSystem {
       system = "x86_64-darwin";
       pkgs = import nixpkgs { system = "x86_64-darwin"; };
       modules = [
-        ./modules/darwin
+        ./modules/darwin/mojave.nix
+        ./modules/darwin/default.nix
+        home-manager.darwinModules.home-manager
+        {
+          home-manager = {
+            useGlobalPkgs = true;
+            useUserPackages = true;
+            # extraSpecialArgs = { inherit pwnvim; };
+ 	    extraSpecialArgs = { };
+            users.seff.imports = [ ./modules/home-manager/default.nix ];
+          };
+        }
+      ];
+    };
+    darwinConfigurations.monterey = darwin.lib.darwinSystem {
+      system = "x86_64-darwin";
+      pkgs = import nixpkgs { system = "x86_64-darwin"; };
+      modules = [
+        ./modules/darwin/monterey.nix
+        ./modules/darwin/default.nix
         home-manager.darwinModules.home-manager
         {
           home-manager = {

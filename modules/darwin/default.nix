@@ -39,7 +39,7 @@
     caskArgs.no_quarantine = true;
     global.brewfile = true;
     masApps = { };
-    casks = [ "cakebrew" "horndis" "librewolf" "qbittorrent" "skim" "eloston-chromium" "keepassxc" "macfuse" "openconnect-gui" "restfox" "temurin" ];
+    casks = [ "cakebrew" "librewolf" "qbittorrent" "skim" "eloston-chromium" "keepassxc" "macfuse" "openconnect-gui" "restfox" "temurin" ];
     taps = [ "bradyjoslin/sharewifi" "louisbrunner/valgrind" "pirj/noclamshell" "winglim/taps" ];
     brews = [ ];
 
