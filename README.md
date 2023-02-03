@@ -1,8 +1,8 @@
 # uynix
 one nix to rule them all
 
-Based on @zmre 's awesome [tutorial](https://github.com/zmre/mac-nix-simple-example).
-Clone this project to home
+Based on @zmre 's awesome [tutorial](https://github.com/zmre/mac-nix-simple-example).  
+Clone this project to home  
 As of 01/2023, this bootstraps nix + home-manager + my flake from scratch  
 
 MacOS:
