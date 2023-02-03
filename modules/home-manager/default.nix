@@ -49,6 +49,14 @@ in
     EDITOR = "nano";
     FONTCONFIG_FILE = "~/.config/fontconfig";
   };
+  xdg.configFile."ytfzf" = {
+    source = ./config;
+    target = "ytfzf/conf.sh";
+  };
+  xdg.configFile."mpv" = {
+    source = ./config;
+    target = "mpv/mpv.conf";
+  };
   #programs.bat.enable = true;
   #programs.bat.config.theme = "TwoDark";
   fonts.fontconfig.enable = true;
