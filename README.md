@@ -11,12 +11,14 @@ MacOS:
 - Quit->Start Terminal(s)
 - Install Homebrew
 - MacOS <= 10.14: Change default shell to zsh: `chsh -s /bin/zsh`
-- Execute `nix build --extra-experimental-features "nix-command flakes" --show-trace uynix/.#darwinConfigurations.high-sierra.system`
-- `./result/sw/bin/darwin-rebuild switch --flake uynix/.#high-sierra`
-- `sudo rm /etc/nix/nix.conf /etc/shells`
-- `mv ~/.zshrc ~/.zshrc.before_nix`
-- `sudo mv /etc/zshrc /etc/zshrc.before_nix` # There might be other problematic paths, just follow the installer
-- `mv ~/.zshenv ~/.zshenv_before_nix`
+- ```bash
+nix build --extra-experimental-features "nix-command flakes" --show-trace uynix/.#darwinConfigurations.high-sierra.system
+./result/sw/bin/darwin-rebuild switch --flake uynix/.#high-sierra
+sudo rm /etc/nix/nix.conf /etc/shells
+mv ~/.zshrc ~/.zshrc.before_nix
+sudo mv /etc/zshrc /etc/zshrc.before_nix # There might be other problematic paths, just follow the installer
+mv ~/.zshenv ~/.zshenv_before_nix
+```
 - Select `meslogs nf` font in iterm2 preferences
 
 Note: "iterm2" and "mpv" casks not working on MacOS <= 10.14
