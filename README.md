@@ -14,7 +14,8 @@ MacOS:
 - Execute `nix build --extra-experimental-features "nix-command flakes" --show-trace uynix/.#darwinConfigurations.high-sierra.system`
 - `./result/sw/bin/darwin-rebuild switch --flake uynix/.#high-sierra`
 - `sudo rm /etc/nix/nix.conf /etc/shells`
-- `sudo mv ~/.zshrc ~/.zshrc.before_nix /etc/zshrc /etc/zshrc.before_nix`
+- `mv ~/.zshrc ~/.zshrc.before_nix`
+- `sudo mv /etc/zshrc /etc/zshrc.before_nix` # There might be other problematic paths, just follow the installer
 - `mv ~/.zshenv ~/.zshenv_before_nix`
 - Select `meslogs nf` font in iterm2 preferences
 
