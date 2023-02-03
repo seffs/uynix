@@ -50,11 +50,11 @@ in
     FONTCONFIG_FILE = "~/.config/fontconfig";
   };
   xdg.configFile."ytfzf" = {
-    source = ./config;
+    source = ./config/ytfzf/conf.sh;
     target = "ytfzf/conf.sh";
   };
   xdg.configFile."mpv" = {
-    source = ./config;
+    source = ./config/mpv/mpv.conf;
     target = "mpv/mpv.conf";
   };
   #programs.bat.enable = true;
