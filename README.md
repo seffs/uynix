@@ -1,7 +1,7 @@
 # minix
 one nix to rule them all
 
-Inspired by @zmre 's awesome tutorial.
+Inspired by @zmre 's awesome [tutorial](https://github.com/zmre/mac-nix-simple-example).
 
 On a new MacOS build, do the following:
 
