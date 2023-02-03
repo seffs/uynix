@@ -38,7 +38,7 @@
       homeConfigurations.seff = let system = "x86_64-linux"; in home-manager.lib.homeManagerConfiguration {
     	  pkgs = nixpkgs.legacyPackages.${system};
           modules = [
-	     ./modules/home-manager/activate-self-management.nix
+         ./modules/home-manager/linux.nix
 	     ./modules/home-manager/default.nix
 	     {
 	       home = {
