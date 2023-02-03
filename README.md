@@ -11,7 +11,7 @@ MacOS:
 - Quit->Start Terminal(s)
 - Install Homebrew
 - MacOS <= 10.14: Change default shell to zsh: `chsh -s /bin/zsh`
-- ```bash
+```bash
 nix build --extra-experimental-features "nix-command flakes" --show-trace uynix/.#darwinConfigurations.high-sierra.system
 ./result/sw/bin/darwin-rebuild switch --flake uynix/.#high-sierra
 sudo rm /etc/nix/nix.conf /etc/shells
