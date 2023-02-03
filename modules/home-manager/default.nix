@@ -30,6 +30,7 @@ in
     libvirt
     qemu
     gnupg
+    python3Full
     # Essentials
     ripgrep
     fd
