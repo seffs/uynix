@@ -48,10 +48,6 @@ in
     EDITOR = "nano";
     FONTCONFIG_FILE = "~/.config/fontconfig";
   };
-  xdg.configFile."ytfzf" = {
-    source = ./config/ytfzf/conf.sh;
-    target = "ytfzf/conf.sh";
-  };
   xdg.configFile."mpv" = {
     source = ./config/mpv/mpv.conf;
     target = "mpv/mpv.conf";
