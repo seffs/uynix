@@ -6,7 +6,7 @@ Inspired by @zmre 's awesome [tutorial](https://github.com/zmre/mac-nix-simple-e
 On a new MacOS build, do the following:
 
 - Install Homebrew
-- Prior to 10.15: Change default shell to zsh chsh -s /bin/zsh
+- Prior to 10.15: Change default shell to zsh: `chsh -s /bin/zsh`
 - Clone this project to your home
 - Execute `nix build --extra-experimental-features "nix-command flakes" --show-trace minix/.#darwinConfigurations.high-sierra.system`
 - `./result/sw/bin/darwin-rebuild switch --flake minix/.#high-sierra`
