@@ -16,4 +16,4 @@ On a new MacOS build, do the following:
 - `select meslogs nf in iterm2 preferences`
 -Done!
 
-Note: "iterm2" and "mpv" casks not working prior to MacOS <= 10.14
+Note: "iterm2" and "mpv" casks not working on MacOS <= 10.14
