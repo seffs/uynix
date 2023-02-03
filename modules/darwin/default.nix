@@ -3,6 +3,9 @@
   users.users.seff = {
 	name = "seff";
   	home = "/Users/seff";
+  	packages = [
+  	  mas
+  	];
   };
   programs.zsh.enable = true;
   environment = {

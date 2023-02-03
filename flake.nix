@@ -35,5 +35,17 @@
         }
       ];
     };
-  };
+      homeConfigurations.seff = let system = "x86_64-linux"; in home-manager.lib.homeManagerConfiguration {
+    	  pkgs = nixpkgs.legacyPackages.${system};
+          modules = [
+	     ./modules/home-manager
+	     {
+	       home = {
+	     	  username = "seff";
+	     	  homeDirectory = "/home/seff";
+	       };
+	     }
+          ];
+      };
+    };
 }

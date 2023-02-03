@@ -12,8 +12,7 @@ in
   # specify my home-manager configs
   home.packages = with pkgs; [
     asciiquarium
-    mas
-    ncdu
+    ncdu_1
     ncspot
     neofetch
     nmap
