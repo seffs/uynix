@@ -3,7 +3,7 @@
   users.users.seff = {
 	name = "seff";
   	home = "/Users/seff";
-  	packages = [
+  	packages = with pkgs; [
   	  mas
   	];
   };
