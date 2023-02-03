@@ -1,5 +1,5 @@
 {
-  description = "minix to rule them all";
+  description = "one nix to rule them all";
   inputs = {
     # Where we get most of our software. Giant mono repo with recipes
     # called derivations that say how to build software.
