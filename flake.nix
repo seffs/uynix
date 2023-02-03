@@ -30,7 +30,7 @@
             useUserPackages = true;
             # extraSpecialArgs = { inherit pwnvim; };
  	    extraSpecialArgs = { };
-            users.seff.imports = [ ./modules/home-manager ];
+            users.seff.imports = [ ./modules/home-manager/default.nix ];
           };
         }
       ];
@@ -38,7 +38,8 @@
       homeConfigurations.seff = let system = "x86_64-linux"; in home-manager.lib.homeManagerConfiguration {
     	  pkgs = nixpkgs.legacyPackages.${system};
           modules = [
-	     ./modules/home-manager
+	     ./modules/home-manager/activate-self-management.nix
+	     ./modules/home-manager/default.nix
 	     {
 	       home = {
 	     	  username = "seff";
