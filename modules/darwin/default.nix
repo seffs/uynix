@@ -5,6 +5,7 @@
   	home = "/Users/seff";
   	packages = with pkgs; [
   	  mas
+	  libarchive # Needed for opendrop
   	];
   };
   programs.zsh.enable = true;

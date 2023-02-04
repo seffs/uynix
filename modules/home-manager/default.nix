@@ -30,6 +30,7 @@ in
     qemu
     gnupg
     python3Full
+	python310Packages.pip
     # Essentials
     ripgrep
     fd
