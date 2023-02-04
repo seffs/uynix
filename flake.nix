@@ -31,7 +31,7 @@
             useUserPackages = true;
             # extraSpecialArgs = { inherit pwnvim; };
  	    extraSpecialArgs = { };
-            users.seff.imports = [ ./modules/home-manager/default.nix ];
+            users.seff.imports = [ ./modules/home-manager/default.nix ./modules/home-manager/macos.nix ];
           };
         }
       ];
@@ -49,7 +49,7 @@
             useUserPackages = true;
             # extraSpecialArgs = { inherit pwnvim; };
  	    extraSpecialArgs = { };
-            users.seff.imports = [ ./modules/home-manager/default.nix ];
+            users.seff.imports = [ ./modules/home-manager/default.nix ./modules/home-manager/macos.nix ];
           };
         }
       ];

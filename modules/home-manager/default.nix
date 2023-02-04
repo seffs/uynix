@@ -46,7 +46,6 @@ in
     PAGER = "less";
     CLICLOLOR = 1;
     EDITOR = "nano";
-    FONTCONFIG_FILE = "~/.config/fontconfig";
   };
   xdg.configFile."mpv" = {
     source = ./config/mpv/mpv.conf;
@@ -54,17 +53,10 @@ in
   };
   #programs.bat.enable = true;
   #programs.bat.config.theme = "TwoDark";
-  fonts.fontconfig.enable = true;
   programs.fzf.enable = true;
   programs.fzf.enableZshIntegration = true;
-  # Relevant for virt-manager
-  #dconf.enable = true;
-  #gtk.enable = true;
-  #gtk.theme.name = "Adwaita";
-  #
   programs.exa.enable = true;
   programs.git.enable = true;
-  programs.zsh.enable = true;
   programs.zsh.enableCompletion = true;
   programs.zsh.enableAutosuggestions = true;
   programs.zsh.enableSyntaxHighlighting = true;

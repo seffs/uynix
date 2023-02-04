@@ -7,10 +7,6 @@
   	  mas
   	];
   };
-  xdg.configFile."ytfzf" = {
-    source = ./config/ytfzf/conf.sh;
-    target = "ytfzf/conf.sh";
-  };
   programs.zsh.enable = true;
   environment = {
     shells = with pkgs; [ bash zsh ];
