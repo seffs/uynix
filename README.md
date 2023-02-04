@@ -5,7 +5,7 @@ Based on @zmre 's awesome [tutorial](https://github.com/zmre/mac-nix-simple-exam
 Clone this project to home  
 As of 01/2023, this bootstraps nix + home-manager + my flake from scratch  
 
-MacOS:
+## MacOS
 
 - Install nix `sh <(curl -L https://nixos.org/nix/install)`
 - Quit->Start Terminal(s)
@@ -23,7 +23,7 @@ mv ~/.zshenv ~/.zshenv_before_nix
 
 Note: "iterm2" and "mpv" casks not working on MacOS <= 10.14
 
-Linux:
+## Linux
 
 Make sure to install zsh with your package manager first AND set it as your default shell
 
