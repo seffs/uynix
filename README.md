@@ -25,6 +25,8 @@ Note: "iterm2" and "mpv" casks not working on MacOS <= 10.14
 
 Linux:
 
+Make sure to install zsh with your package manager first AND set it as your default shell
+
 ```bash
 sh <(curl -L https://nixos.org/nix/install) --daemon
 # Restart terminal(s)
