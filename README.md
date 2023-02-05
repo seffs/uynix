@@ -13,7 +13,7 @@ As of 01/2023, this bootstraps nix + home-manager + my flake from scratch
 - MacOS <= 10.14: Change default shell to zsh: `chsh -s /bin/zsh`
 ```bash
 nix build --extra-experimental-features "nix-command flakes" --show-trace uynix/.#darwinConfigurations.high-sierra.system
-./result/sw/bin/darwin-rebuild switch --flake uynix/.#high-sierra
+./result/sw/bin/darwin-rebuild switch --flake uynix/.#mojave #available: mojave, monterey
 sudo rm /etc/nix/nix.conf /etc/shells
 mv ~/.zshrc ~/.zshrc.before_nix
 sudo mv /etc/zshrc /etc/zshrc.before_nix # There might be other problematic paths, just follow the installer
