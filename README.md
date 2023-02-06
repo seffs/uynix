@@ -21,7 +21,7 @@ mv ~/.zshenv ~/.zshenv_before_nix
 ```
 - Select `meslogs nf` font in iterm2 preferences
 
-Note: "iterm2" and "mpv" casks not working on MacOS <= 10.14
+Note: "iterm2" cask not working on MacOS <= 10.14
 
 ## Linux
 
