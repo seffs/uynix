@@ -12,7 +12,7 @@ in
   # specify my home-manager configs
   home.packages = with pkgs; [
     asciiquarium
-    ncdu_1
+    ncdu
     ncspot
     neofetch
     nmap
@@ -31,6 +31,7 @@ in
     gnupg
     python3Full
 	python310Packages.pip
+    poetry
     # Essentials
     ripgrep
     fd

@@ -6,6 +6,7 @@
   	packages = with pkgs; [
   	  mas
 	  libarchive # Needed for opendrop
+      streamlink
   	];
   };
   programs.zsh.enable = true;
