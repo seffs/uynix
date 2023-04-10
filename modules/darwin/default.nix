@@ -7,6 +7,7 @@
   	  mas
 	  libarchive # Needed for opendrop
       streamlink
+      llvm
   	];
   };
   programs.zsh.enable = true;
