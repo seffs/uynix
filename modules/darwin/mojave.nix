@@ -1,5 +1,5 @@
 { pkgs, ... }: {
   homebrew = {
-    casks = [ "horndis" "mpv" ];
+    casks = [ "horndis" ];
   };
 }
