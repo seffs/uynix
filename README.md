@@ -21,7 +21,10 @@ mv ~/.zshenv ~/.zshenv_before_nix
 ```
 - Select `meslogs nf` font in iterm2 preferences
 
-Note: "iterm2" cask not working on MacOS <= 10.14
+Notes:
+* "iterm2" cask not working on MacOS <= 10.14
+* "mpv" cask build doesn't support recent youtube updates on MacOS <= 10.14. Falling back to macports installation.
+  (Yes, I justify 2GBs of dependencies because I **refuse** to compile homebrew libraries from source for every new update. Sue me)
 
 ## Linux
 
@@ -36,4 +39,3 @@ nix-shell '<home-manager>' -A install
 sudo nano /etc/nix/nix.conf # Add: experimental-features = nix-command flakes
 home-manager switch --flake ~/uynix/.#seff
 ```
-Done!
